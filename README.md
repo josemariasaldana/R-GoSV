@@ -47,19 +47,15 @@ $./HMAC_SHA256_rgoose
 
 Commands to execute the program at terminal:
 
-sudo allows users to run programs with the security privileges of another user (normally the superuser, or root).
-```
-$ sudo bash 
-```
-
 Compilation of program:
 ```
 $ gcc -o R-GoSV_rgoose_send R-GoSV_rgoose_send.c
 ```
 
 To run the program:
+(sudo allows users to run programs with the security privileges of another user, normally the superuser, or root).
 ```
-$./R-GoSV_rgoose_send
+$ sudo ./R-GoSV_rgoose_send
 ```
 
 ## AES256_gcm_rsv
@@ -131,29 +127,21 @@ $./  R-GoSV_rsv_send
 
 Commands to execute the program at terminal:
 
-sudo allows users to run programs with the security privileges of another user (normally the superuser, or root). 
-```
-$ sudo bash 
-```
-
 Compilation of program:
 ```
 $ gcc -o plain_rgoose plain_rgoose.c
 ```
 
 To run the program:
+(sudo allows users to run programs with the security privileges of another user, normally the superuser, or root).
 ```
-$./plain_rgoose
+$ sudo ./plain_rgoose
 ```
 
 ## plain_rsv
 `plain_rsv.c` generates R-SV packets with out any security algorith applied to the packets and send in to the network with its full stack of all the headers of IP, UDP, Session layers followed by Application data. Here applicatio data is GOOSE message defined according to IEC 61850-8-1. 
 
 Commands to execute the program at terminal:
-sudo allows users to run programs with the security privileges of another user (normally the superuser, or root). 
-```
-$ sudo bash 
-```
 
 Compilation of program:
 ```
@@ -161,6 +149,7 @@ $ gcc -o plain_rsv.c plain_rsv.c.c
 ```
 
 To run the program:
+(sudo allows users to run programs with the security privileges of another user, normally the superuser, or root).
 ```
 $./plain_rsv
 ```
