@@ -16,11 +16,12 @@
 #define DEST_MAC3    0x8A
 #define DEST_MAC4    0x1F
 #define DEST_MAC5    0x2F
-
 /* destination MAC address: FC 61 98 8A 46 EE */
+
 /* interface name: enter your intername name */ 
-#define IF_NAME     "eno1"
+#define IF_NAME     "eth0"
 #define B_SIZE     2048
+
 /* IP Header fields */
 char ver_hl =0x45;  // version 4 and header length of ip is 20 (5) bytes (1 byte)
 char tos = 0x00; // type of service. IP precedence and Differentiated Service code point (1 byte)
@@ -381,7 +382,7 @@ int main(int argc, char *argv[])
 	sendbuf[tx_len++] = keyID3;
 	sendbuf[tx_len++] = keyID4;
     sendbuf[tx_len++] = len1;
-	sndbuf[tx_len++] = len2;
+	sendbuf[tx_len++] = len2;
 	sendbuf[tx_len++] = len3;
 	sendbuf[tx_len++] = len4;
 	sendbuf[tx_len++] = pl_type;
