@@ -19,7 +19,7 @@
 #define DEST_MAC4    0x1F
 #define DEST_MAC5    0x2F
 
-#define IF_NAME     "eno1"
+#define IF_NAME     "eth0"
 #define B_SIZE     2048
 /* IP Header fields */
 char ver_hl =0x45;  // version 4 and header length of ip is 20 (5) bytes (1 byte)

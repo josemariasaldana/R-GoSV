@@ -49,7 +49,7 @@ char APPID2=0x01;
 char length1=0x00; 
 char length2=0x89;
 
-/* GOOSE APDU fields according to IEC 61850-8-1*/.
+/* GOOSE APDU fields according to IEC 61850-8-1*/
 char goosePDU_tag1=0x61;		/* goosePDU tag  */
 char goosePDU_tag2=0x81;		
 char goosePDU_length=0x86;		/* goosePDU length  */

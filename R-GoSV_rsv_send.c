@@ -18,7 +18,7 @@
 #define DEST_MAC4    0x46
 #define DEST_MAC5    0xEE
 
-#define IF_NAME     "eno1"
+#define IF_NAME     "eth0"
 #define B_SIZE     2048
 
 /* Enter your custom measurement values in hexa decimal    */
