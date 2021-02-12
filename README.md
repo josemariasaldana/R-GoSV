@@ -141,7 +141,7 @@ Commands to execute the program at terminal:
 
 Compilation of program:
 ```
-$ gcc -o plain_rsv.c plain_rsv.c.c
+$ gcc -o plain_rsv plain_rsv.c
 ```
 
 To run the program:
